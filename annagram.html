@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <script src="annagram.js"></script>
+        <style>
+            body {
+                background: #333;
+                color: #ccc;
+                font-weight: bold;
+                font-family: Calibri, Arial, Sans-serif;
+                font-size: 14pt;
+                margin-left: 10em;
+                margin-right: 10em;
+            }
+
+            div#saved {
+                border: 1px solid #ccc;
+                padding: 3px;
+                padding-left: 5px;
+            }
+
+            div#new {
+                margin-top: 5px;
+            }
+
+            input#entry {
+                width: 20em;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="saved">
+        <ul id="list">
+            <li>Katoenen kniekousen</li>
+        </ul>
+    </div>
+    <div>
+        <label>Begin met:</label><input type="text" id="target"/>
+    </div>
+    <div id="new">
+        <input type="text" id="entry"/>
+        <span id="missing">katoenenkniekousen</span>|
+        <span id="extra" />
+    </div>
+    <div> <button id="save" type="submit">Save</button></div>
+</html>
