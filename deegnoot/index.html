@@ -1,0 +1,276 @@
+<html>
+<head>
+    <style>
+        body {
+            padding: 1em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 14pt;
+        }
+
+        .container {
+            width: 30cm;
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 2em;
+            width: 500px;
+        }
+
+        .page {
+            width: 14.8cm;
+            height: 21cm;
+            margin: auto;
+            border: 1px solid #000;
+            line-height: 130%;
+            position: relative;
+        }
+
+        p::first-letter {
+            font-size: 200%;
+            margin-left: 0.5em;
+        }
+
+        p {
+            margin-top: 2em;
+        }
+
+        .contents {
+            margin: 1em 1.5em 1.5em 1.5em;
+        }
+
+        #cover {
+            background-image: url("deegnoten_cover.png");
+            background-size: contain;
+        }
+
+        #back, #forward {
+            margin: 1em;
+            font-weight: bolder;
+            font-size: 72pt;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        var page = 0;
+
+        window.onload = displayCurrentPage;
+
+        function displayCurrentPage() {
+            var pages = document.getElementsByClassName("page");
+            if (page < 0) page = pages.length - 1;
+            if (page >= pages.length) page = 0;
+            for (let page of pages) {
+                page.style.display = "none";
+            }
+            pages[page].style.display = "block";
+        }
+
+        function forward() {
+            ++page;
+            displayCurrentPage();
+        }
+
+        function back() {
+            --page;
+            displayCurrentPage();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="back" onclick="back()"><</div>
+        <div class="display">
+            <div class="page" id="cover">
+            </div>
+            <div class="page" id="one">
+                <div class="contents">
+                    <p>
+                        Veel mensen denken tegenwoordig dat gezond eten betekent dat je zo veel mogelijk groenten moet eten. Niks is echter minder waar!
+                        Het allerbelangrijkste ingredi&euml;nt in het menselijk dieet is energie! Energie is, zonder overdrijven, niks minder dan de reden dat we &uuml;berhaupt eten.
+                    </p>
+                    <p>
+                        Als iemand te weinig energie binnenkrijgt volgen de eerste klachten vaak al binnen een aantal uur. Houdt het energietekort aan, dan nemen
+                        lichamelijke prestaties merkbaar af. En na enkele weken kan dit zelfs een anderszins gezond persoon fataal worden.
+                    </p>
+                    <p>
+                        Daarentegen zijn secundaire voedingstoffen als vitamen, vezels en eiwitten veel minder cruciaal. Vaak duurt het hierbij weken voordat zelfs maar
+                        de eerste verschijnselen van een tekort zichtbaar zijn. Op de lange termijn is het natuurlijk belangrijk om ook een beetje op deze inname te letten.
+                        Vooral bij groeiende kinderen en personen met een zwakker gestel. Maar het staat buiten kijf dat de primaire focus op energie moet liggen.
+                    </p>
+                    <p>
+                        Daarom is dit boek gewijdt aan een meesterlijk effici&euml;nte manier om een mens van energie te voorzien: de deegnoot.
+                    </p>
+                </div>
+            </div>
+            <div class="page" id="two">
+                <div class="contents">
+                    <p>
+                        Een deegnoot bevat een brede combinatie van energiebronnen. De basis wordt gevormd door koolhydraten uit granen, rijkelijk aangevuld met suikers.
+                        Om de werking op de lange termijn te garanderen worden er met behulp van een frituur nog extra oli&euml;en toegevoegd.
+                    </p>
+                    <p>
+                        Het eerste wat men nodig heeft om een deegnoot te maken is een schoon, plat oppervlak. Zorg voor voldoende ruimte om te werken, en om de deegnoot
+                        van alle kanten te kunnen inspecteren. De kleur is niet bijzonder belangrijk, maar mocht een een suggestie willen: roze schijnt populair te zijn.
+                    </p>
+                    <p>
+                        Neem vervolgens een basisdeegnoot, en plaats deze op het oppervlak. 
+                    </p>
+                    <img class="photo bottom" src="1.png"/><br/>
+                </div>
+            </div>
+            <div class="page" id="three">
+                <div class="contents">
+                    <img class="photo" src="2.png"/><br/>
+                    <p>
+                        Strijk de basisdeegnoot glad, en trek en duw hem in de gewenste vorm. Voorlopig gaat het vooral om de globale vorm. De fijnere details komen later.
+                    </p>
+                    <p>
+                        Een te perfecte vorm is niet alleen ongeloofwaardig, het is ook ontzettend saai. Een menselijk brein wil bezig gehouden worden, en als dingen erg
+                        regelmatig zijn worden ze te makkelijk door de hersenen weggefilterd. 
+                    </p>
+                    <p>
+                        Tegelijkertijd is het wel belangrijk om te onthouden dat we hier proberen om
+                        variatie aan te brengen in een basisvorm. Het is dus niet de bedoeling dat de deegnoot er uit gaat zien alsof die uit klei geboetseerd is.
+                    </p>
+                </div>
+            </div>
+            <div class="page" id="two">
+                <div class="contents">
+                    <p>
+                        Veel mensen denken bij het beoordelen van eetbare creaties meteen aan smaak, maar verassend genoeg is dat niet zo heel belangrijk. Geur komt eerder en
+                        sterker binnen bij mensen, en werkt ook door in de smaakbeleving. Maar wat nog vaker onderschat wordt is uiterlijk.
+                    </p>
+                    <p>
+                        Onderzoek heeft aangetoond dat ook uiterlijk doorwerkt op de smaakbeleving: blauw belichte aardappelen smaken vies. En uiteraard
+                        is uiterlijk extra belangrijk bij etaleren, waar een klant de smaak en geur vaak pas na aankoop kan ervaren.
+                    </p>
+                    <p>
+                        De makkelijkste manier om een mooi glazuur te maken is om te beginnen met een kopie van de bovenkant van onze deegnoot. Trek deze iets naar boven,
+                        en geef hem wat volume. Wees vooral niet te karig, want glazuur is energie!
+                    </p>
+                    <img class="photo bottom" src="3.png"/><br/>
+                </div>
+            </div>
+            <div class="page" id="two">
+                <div class="contents">
+                    <img class="photo" src="4.png"/><br/>
+                    <p>
+                        Trek hier en daar wat aan de rand van het glazuur om een sprekender beeld te cre&euml;ren. Wees speels, maar denk aan de boodschap: een overvloed
+                        aan suikers, die bijna van de deegnoot af dreigt te druipen.
+                    </p>
+                    <p>
+                        Nu we de basisvorm van de deegnoot en het glazuur hebben is het tijd om wat meer details toe te voegen. Bij de deegnoot drukken we de evenaar een
+                        beetje naar binnen, en we geven het glazuur wat meer textuur.
+                    </p>
+                    <p>
+                        Ook gaan we de onderrand van het glazuur wat meer volume geven. Bij vloeistoffen zorgt de wisselwerking tussen zwaartekracht en oppervlaktespanning
+                        ervoor dat ze dikker zijn aan de onderkant. Denk bijvoorbeeld aan een druppel.
+                    </p>
+                </div>
+            </div>
+            <div class="page" id="two">
+                <div class="contents">
+                    <p>
+                        Bij de deegnoot mag best scherp gewerkt worden, maar pas op de het niet abrupt wordt. En voor het glazuur willen we weer een vloeiende indruk cre&euml;ren,
+                        en tegelijkertijd voorkomen dat het te saai en gelijkmatig oogt.
+                    </p>
+                    <p>
+                        Voordat we verder gaan is het een goed idee om alvast wat kleur toe te voegen. Dit zal ons bij de volgende stappen helpen om de juiste balans te vinden.
+                    </p>
+                    <p>
+                        Voor de deegnoot zelf is een gelige kleur met een hint van goudbruin altijd een veilige keuze. Met een egale kleur ziet het er nog niet geloofwaardig uit,
+                        maar dat is niet erg. Voorlopig gaat het alleen om de kleurbalans.
+                    </p> 
+                    <img class="photo bottom" src="5.png"/><br/>
+                </div>
+            </div>
+            <div class="page" id="two">
+                <div class="contents">
+                    <img class="photo" src="6.png"/><br/>
+                    <p>
+                        Met de kleur van het glazuur kunnen we een stuk creatiever zijn. Roze is wederom een populaire keuze, maar er zijn veel meer kleuren die goed kunnen werken.
+                        Contrasteer met de kleur van de deegnoot, zodat de combinatie goed in het oog springt. Wees niet bang om een felle kleur te kiezen, of juist iets als een mooi,
+                        diep chocoladebruin.
+                    </p>
+                    <p>
+                        Let hier ook goed op de materiaaleigenschappen. He glazuur zal meer glinsteren dan de deegnoot. En afhankelijk van de gekozen kleur kan het ook belangrijk zijn
+                        om rekening te houden met de spreiding van licht in het glazuur. Een lichtgekleurd suikerglazuur zal hier bijvoorbeeld meer baat bij hebben dan een donker
+                        chocoladeglazuur.
+                    </p>
+                </div>
+            </div>
+            <!--
+            <div class="page" id="two">
+                <div class="contents">
+                    <img class="photo" src="7.png"/><br/>
+                </div>
+            </div>
+            -->
+            <div class="page" id="two">
+                <div class="contents">
+                    <p>
+                        Om de deegnoot nog wat speelser te maken gaan we wat extra elementen toevoegen. Het is tijd voor.... sprinkles!
+                    </p>
+                    <p>
+                        Het doel is hier om meer variatie en kleur toe te voegen. Zowel contrasterende als complimenterende kleuren kunnen hier een rol bij spelen.
+                        Ook is het belangrijk om de vormen wat te vari&euml;ren: grote spinkles, kleine sprinkles. Rechte sprinkles, kromme sprinkles. En wees ook niet
+                        bang om een paar elementen toe te voegen die wat meer uit de toon vallen.
+                    </p>
+                    <p>
+                        Zorg dat de sprinkles op de juiste plek terecht komen, maar let ook hierbij op dat het resultaat niet te gelijkmatig wordt. Speel met de plaatsing
+                        en ori&euml;ntatie, en denk ook weer aan de vloeibaarheid van het glazuur, dat de sprinkles als het ware gevangen houdt.
+                    </p>
+                    <img class="photo bottom" src="8.png"/><br/>
+                </div>
+            </div>
+            <!--
+            <div class="page" id="two">
+                <div class="contents">
+                    <img class="photo" src="9.png"/><br/>
+                </div>
+            </div>
+            -->
+            <div class="page" id="two">
+                <div class="contents">
+                    <img class="photo" src="10.png"/><br/>
+                    <p>
+                        Eindelijk is nu de tijd gekomen om een einde te maken aan de veel te egale kleur van onze deegnoot. Daar waar we de evenaar van de deegnoot wat ingedrukt hebben gaan we deze een lichtere kleur geven. Let er op dat deze kleur alleen voor het naar
+                        binnen gedrukte deel is.
+                    </p>
+                    <p>
+                        De rest van de deegnoot gaan we ook wat meer textuur geven. We willen over het gehele oppverlakte kleine variaties toevoegen, en op
+                        enkele plekken wat luchtblaasjes onder het oppervlak van de deegnoot. En we maken de deegnoot iets donkerder, daar waar
+                        het oppervlak meer uitsteekt.
+                    </p>
+                    <p>
+                        En TADA! Onze hoogstpersoonlijk zelfgemaakte deegnoot! Smakelijk!
+                    </p>
+                </div>
+            </div>
+            <div class="page" id="two">
+                <div class="contents">
+                    <img class="photo" src="xmas.png"/><br/>
+                    <p>
+                        Nu we de basisprincipes kennen kunnen we eindeloos vari&euml;ren. Zie bijvoorbeeld deze deegnoten, "Kerstboom" & "Freedom Chocolate"!
+                    </p>
+                    <img class="photo" src="choc.png"/><br/>
+                </div>
+            </div>
+        </div>
+        <div id="forward" onclick="forward()">></div>
+    </div>

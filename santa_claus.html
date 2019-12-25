@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas:700&display=swap');
+
+            body {
+                background: #fff;
+                color: #000;
+                font-weight: bold;
+                font-size: 24pt;
+                margin: 1em 1.5em 1em 1.5em;
+                font-family: 'Mountains of Christmas', cursive;
+            }
+
+            div.lang {
+                width: 14.8cm;
+                height: 21cm;
+                margin: auto;
+                border: 1px solid #000;
+                padding: 1em 1.5em 1em 1.5em;
+            }
+
+            div.par {
+                padding-bottom: 1em;
+            }
+        </style>
+
+        <script>
+            window.onload = () => {
+                document.getElementById('en').style.display = 'none';
+            }
+
+            function dunglish() {
+                document.getElementById('nl').style.display = 'none';
+                document.getElementById('en').style.display = 'block';
+            }
+
+            function dutchlands() {
+                document.getElementById('nl').style.display = 'block';
+                document.getElementById('en').style.display = 'none';
+            }
+        </script>
+    </head>
+    <body>
+        <div class="lang" id="nl">
+            <div class="par">
+                (Switch to <a href="#" onclick="dunglish()">Dunglish</a>)
+            </div>
+            <div class="par">
+                De Kerstman had lang zitten denken,<br>
+                Wat hij Eefje dit jaar zou schenken.<br>
+            </div>
+        
+            <div class="par">
+                Eef wou een kookboek, vol met gezond eten,<br>
+                Maar dat kreeg Santa niet over zijn geweten.<br>
+            </div>
+        
+            <div class="par">
+                "Goede groenten en andere troep<br>
+                Laten geen ruimte voor ouderwets snoep.<br>
+            </div>
+        
+            <div class="par">
+                Alles smaakt beter met een beetje gefrituur<br>
+                En rijkelijk bedekt met glanzend glazuur!"<br>
+            </div>
+        
+            <div class="par">
+                Niks gaat boven oer-Amerikaans vertier,<br>
+                Dus wees niet bang, je kado is <a href="deegnoot/index.html">hier!</a><br>
+            </div>
+        </div>
+        
+        <div class="lang" id="en">
+            <div class="par">
+                (Terug naar <a href="#" onclick="dutchlands()">Dutchlands</a>)
+            </div>
+            <div class="par">
+                Santa Claus had long sat thinking,<br>
+                What he Eefje this year would be schenking,<br>
+            </div>
+            
+            <div class="par">
+                Eef wanted a cookbook, full with healthy food.<br>
+                But his conscience said "That's just no good.<br>
+            </div>
+                
+            <div class="par">
+                All those veggies just aren't right,<br>
+                They leave no room for sugary delight.<br>
+            </div>
+                
+            <div class="par">
+                Into the deep-frier, and it's beautifully brown,<br>
+                And sugary frosting is the prettiest crown!"<br>
+            </div>
+                
+            <div class="par">
+                So be an american and have no fear,<br>
+                Traditions are good and your present is <a href="deegnoot/index.html">here!</a><br>
+            </div>
+        </div>
+
+    </body>
+</html>
